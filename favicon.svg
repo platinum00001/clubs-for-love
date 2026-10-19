@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Clubs for Love">
+  <rect width="32" height="32" rx="7" fill="#F4EFE4"/>
+  <ellipse cx="16" cy="27.2" rx="8" ry="2.1" fill="#C4A574"/>
+  <rect x="15" y="5" width="2" height="22" rx="1" fill="#1B4D3E"/>
+  <path fill="#1B4D3E" d="M17 5.2h11L17 14.6z"/>
+</svg>

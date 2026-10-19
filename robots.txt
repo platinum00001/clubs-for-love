@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /clubs-for-love/staff.html
+Sitemap: https://platinum00001.github.io/clubs-for-love/sitemap.xml
