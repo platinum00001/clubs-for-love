@@ -9,7 +9,7 @@ window.C4L_CONFIG = {
   SUPABASE_ANON_KEY: "sb_publishable_IJHa5taHcttV2DSZq45fWQ_bVbRDbA2", // publishable key (safe to publish)
   SUPABASE_SCHEMA: "clubs4love",     // this site's own schema in the shared "james-sites" project
   PHOTO_BUCKET: "clubs4love-photos", // private bucket: public can upload, only admins can view
-  SITE_URL: "https://platinum00001.github.io/clubs-for-love/",
+  SITE_URL: "https://clubsforlove.com/",
 
   // The one inbox for the whole site. NOTE: clubs4lovema@gmail.com is being created by James;
   // until it exists, mail sent to it will bounce. Change it here and every page follows.

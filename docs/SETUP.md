@@ -1,6 +1,6 @@
 # Clubs for Love — setup and James's manual steps
 
-Live site: https://platinum00001.github.io/clubs-for-love/
+Live site: https://clubsforlove.com/
 Repo: https://github.com/platinum00001/clubs-for-love
 Database: Supabase project **james-sites** (`oiousqgzqcjanikglkxl`), schema **`clubs4love`**
 Photos: private storage bucket **`clubs4love-photos`** (public can upload, only admins can view)
@@ -27,12 +27,12 @@ the email fallback. (This is the only expected error in the browser console.)
 ## 2. Add the sign-in redirect URL (required for login links)
 
 1. Open https://supabase.com/dashboard/project/oiousqgzqcjanikglkxl/auth/url-configuration
-2. Under **Redirect URLs**, add: `https://platinum00001.github.io/clubs-for-love/**`
+2. Under **Redirect URLs**, add: `https://clubsforlove.com/**`
 3. Save. **Do not change the Site URL** — it's shared with the other sites.
 
 ## 3. Make yourself an admin (for the Staff page)
 
-Sign in once on https://platinum00001.github.io/clubs-for-love/account.html, then run in the
+Sign in once on https://clubsforlove.com/account.html, then run in the
 Supabase SQL editor (replace the email):
 
 ```sql
@@ -58,15 +58,15 @@ Clubs for Love, Root to Rise app and Recovery Milestones because they share the 
 1. https://console.cloud.google.com/apis/credentials → Create credentials → OAuth client ID → Web application.
 2. Authorized redirect URI: `https://oiousqgzqcjanikglkxl.supabase.co/auth/v1/callback`
 3. OAuth consent screen: app name, support email, add the privacy URL
-   `https://platinum00001.github.io/clubs-for-love/privacy.html` (or the shared one you use).
+   `https://clubsforlove.com/privacy.html` (or the shared one you use).
 4. Paste the Client ID and Secret in Supabase → Authentication → Sign In / Providers → Google → Enable.
 
 **Facebook**
 1. https://developers.facebook.com/apps → Create app → "Authenticate and request data from users with Facebook Login".
 2. Facebook Login → Settings → Valid OAuth Redirect URI: `https://oiousqgzqcjanikglkxl.supabase.co/auth/v1/callback`
-3. App settings → Basic: Privacy Policy URL `https://platinum00001.github.io/clubs-for-love/privacy.html`,
+3. App settings → Basic: Privacy Policy URL `https://clubsforlove.com/privacy.html`,
    User data deletion → "Data deletion instructions URL":
-   `https://platinum00001.github.io/clubs-for-love/privacy.html#data-deletion`
+   `https://clubsforlove.com/privacy.html#data-deletion`
 4. Paste the App ID and Secret in Supabase → Authentication → Providers → Facebook → Enable. Switch the app to Live.
 
 ## 5. Email sending via Resend (recommended)

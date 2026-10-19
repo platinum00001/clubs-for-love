@@ -19,7 +19,7 @@ for (const f of files) {
       assert.ok(fs.existsSync(path.join(root, target)), f + ' links to missing file ' + target);
       links++;
     }
-    assert.ok(/og:image" content="https:\/\/platinum00001\.github\.io\/clubs-for-love\/og\.jpg"/.test(s), f + ' missing og:image');
+    assert.ok(/og:image" content="https:\/\/clubsforlove\.com\/og\.jpg"/.test(s), f + ' missing og:image');
     assert.ok(/twitter:card" content="summary_large_image"/.test(s), f + ' missing twitter card');
     assert.ok(/id="our-sites"/.test(s), f + ' missing Our Sites footer');
     assert.ok(/privacy\.html/.test(s) && /terms\.html/.test(s), f + ' missing privacy/terms links');

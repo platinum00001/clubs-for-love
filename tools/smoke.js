@@ -2,7 +2,7 @@
 // Usage: node tools/smoke.js <baseURL> <shotDir>   (needs puppeteer-core + Chrome)
 const puppeteer = require(process.env.PUPPETEER || 'puppeteer-core');
 const fs = require('fs');
-const base = process.argv[2] || 'https://platinum00001.github.io/clubs-for-love/';
+const base = process.argv[2] || 'https://clubsforlove.com/';
 const out = process.argv[3] || 'shots';
 const pages = ['', 'about.html', 'donate.html', 'pickup.html', 'request.html', 'drop-off.html', 'sponsors.html', 'affiliates.html', 'stories.html', 'calendar.html', 'contact.html', 'account.html', 'staff.html', 'privacy.html', 'terms.html', 'nope-404'];
 (async () => {

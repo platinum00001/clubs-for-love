@@ -3,7 +3,7 @@
 Run:  python3 tools/build.py   (writes *.html in the site root). Edit page bodies below."""
 import os, html
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = "https://platinum00001.github.io/clubs-for-love/"
+SITE = "https://clubsforlove.com/"
 DESC = "Used or new, golf clubs on Cape Cod become a first bag for someone in recovery."
 V = "1"  # bump to bust caches for css/js
 
@@ -21,7 +21,7 @@ MARK = '<svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="27" rx=
 
 SITES = [  # "Our Sites" cross-links (same list as healthandwellnessmaps.com)
  ("Health &amp; Wellness Maps", "Local health and wellness resources on one searchable map, starting on Cape Cod.", "https://healthandwellnessmaps.com/"),
- ("Root to Rise", "Recovery community support with coaching, meals and work in Falmouth and Mashpee, MA and Nashua, NH.", "https://roottorisema.grok.me/"),
+ ("Root to Rise", "Recovery community support with coaching, meals and work in Falmouth and Mashpee, MA and Nashua, NH.", "https://roottorisema.org/"),
  ("Cape Island Caf&eacute;", "Soups, salads, bowls and wraps for lunch at 316 Gifford Street in Falmouth, MA.", "https://capeislandcafe.com/"),
  ("Chef Bookings", "Find and book a private chef for dinners, celebrations, or weekly meals at home.", "https://chefbookings.org/"),
  ("Cape Edge", "Pre-filled peptide pens and peptide education for licensed clinicians and practices.", "https://platinum00001.github.io/cape-edge/"),
