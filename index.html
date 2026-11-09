@@ -15,7 +15,7 @@
 <meta property="og:image" content="https://clubsforlove.com/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Two golf bags on a Cape Cod porch with the words Clubs for Love">
+<meta property="og:image:alt" content="Clubs for Love mark — two golf clubs forming a heart — with the words Clubs for Love">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Clubs for Love">
 <meta name="twitter:description" content="Used or new, golf clubs on Cape Cod become a first bag for someone in recovery.">
@@ -27,14 +27,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap">
-<link rel="stylesheet" href="css/styles.css?v=1">
+<link rel="stylesheet" href="css/styles.css?v=2">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="topbar"><div class="wrap"><a data-email href="#">clubs4lovema@gmail.com</a><span>Falmouth · Mashpee · Upper Cape</span></div></div>
 <header class="site">
  <div class="wrap navbar">
-  <a class="brand" href="index.html"><span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="27" rx="7" ry="2" fill="#C4A574"/><rect x="15" y="5" width="2" height="22" rx="1" fill="#F4EFE4"/><path fill="#F4EFE4" d="M17 5.2h10L17 13.8z"/></svg></span><span><b>Clubs for Love</b><small>Cape Cod</small></span></a>
+  <a class="brand" href="index.html"><span class="mark"><picture><source srcset="images/mark-64.webp 1x, images/mark-128.webp 2x" type="image/webp"><img src="images/mark-64.png" srcset="images/mark-64.png 1x, images/mark-128.png 2x" width="38" height="38" alt="" decoding="async"></picture></span><span><b>Clubs for Love</b><small>Cape Cod</small></span></a>
   <nav class="navlinks" aria-label="Main">
    <a class="hide-sm" href="drop-off.html">Drop-off</a><a class="hide-sm" href="request.html">Need clubs</a><a class="hide-sm" href="pickup.html">Pickup</a><a class="hide-sm" href="about.html">About</a>
    <a class="btn sm" href="donate.html">Donate</a>
@@ -45,8 +45,23 @@
 </header>
 <main id="main">
 
-<section class="hero">
- <div class="hero-img"><picture><source srcset="images/porch-bags.webp" type="image/webp"><img src="images/porch-bags.jpg" alt="Two worn golf bags leaning on a shingled Cape Cod porch rail beside hydrangeas" fetchpriority="high"></picture></div>
+<section class="hero" aria-label="Clubs for Love">
+ <div class="hero-img" aria-hidden="true">
+  <picture class="hero-poster">
+   <source media="(max-width: 767px)" srcset="video/hero-fairway-poster-mobile.jpg">
+   <img src="video/hero-fairway-poster.jpg" alt="" width="1280" height="400" fetchpriority="high">
+  </picture>
+  <video class="hero-video" autoplay muted loop playsinline preload="auto"
+    disablepictureinpicture disableremoteplayback
+    poster="video/hero-fairway-poster.jpg"
+    data-poster-desktop="video/hero-fairway-poster.jpg"
+    data-poster-mobile="video/hero-fairway-poster-mobile.jpg">
+   <source src="video/hero-fairway-mobile.mp4" type="video/mp4" media="(max-width: 767px)">
+   <source src="video/hero-fairway.webm" type="video/webm" media="(min-width: 768px)">
+   <source src="video/hero-fairway.mp4" type="video/mp4" media="(min-width: 768px)">
+  </video>
+  <div class="hero-shade"></div>
+ </div>
  <div class="wrap"><div class="hero-card">
   <p class="eyebrow">Cape Cod</p>
   <h1>Used or new, golf clubs on Cape Cod become a first bag for someone in recovery.</h1>
@@ -108,7 +123,7 @@
 <footer class="site">
  <div class="wrap foot-grid">
   <div class="foot-brand">
-   <a class="brand" href="index.html" style="color:inherit"><span class="mark"><svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="27" rx="7" ry="2" fill="#C4A574"/><rect x="15" y="5" width="2" height="22" rx="1" fill="#F4EFE4"/><path fill="#F4EFE4" d="M17 5.2h10L17 13.8z"/></svg></span><span><b>Clubs for Love</b><small style="color:var(--sand)">Cape Cod</small></span></a>
+   <a class="brand" href="index.html" style="color:inherit"><span class="mark"><picture><source srcset="images/mark-64.webp 1x, images/mark-128.webp 2x" type="image/webp"><img src="images/mark-64.png" srcset="images/mark-64.png 1x, images/mark-128.png 2x" width="38" height="38" alt="" decoding="async"></picture></span><span><b>Clubs for Love</b><small style="color:var(--sand)">Cape Cod</small></span></a>
    <p style="margin-top:14px">Used or new clubs, shoes, and apparel go to people in recovery on Cape Cod. Courses, shops, and simulators can donate a round. Anyone can sponsor one. Extra sets may be auctioned for green fees, lessons, and recovery golf days.</p>
    <p class="eyebrow" style="margin-top:18px">Follow</p>
    <div class="social" data-social></div>

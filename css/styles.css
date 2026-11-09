@@ -33,8 +33,9 @@ p{margin:0 0 .9rem}
 header.site{position:sticky;top:0;z-index:40;background:rgba(244,239,228,.96);backdrop-filter:blur(6px);box-shadow:0 1px 0 var(--line)}
 .navbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;padding-bottom:10px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fairway-deep)}
-.brand .mark{width:38px;height:38px;border-radius:50%;background:var(--fairway);display:grid;place-items:center}
-.brand .mark svg{width:20px;height:20px}
+.brand .mark{width:38px;height:38px;border-radius:50%;background:var(--fairway);display:grid;place-items:center;overflow:hidden;flex:0 0 38px}
+.brand .mark picture{display:contents}
+.brand .mark img{width:38px;height:38px;object-fit:cover;border-radius:50%;display:block}
 .brand b{font-family:var(--serif);font-size:1.2rem;font-weight:600;display:block;line-height:1.1}
 .brand small{display:block;font-size:.66rem;letter-spacing:.2em;color:var(--fairway);text-transform:uppercase}
 .navlinks{display:flex;align-items:center;gap:22px}
@@ -63,12 +64,20 @@ header.site{position:sticky;top:0;z-index:40;background:rgba(244,239,228,.96);ba
 
 /* hero */
 .hero{position:relative}
-.hero-img{height:min(62vh,520px);overflow:hidden;background:var(--fairway-deep)}
-.hero-img img{width:100%;height:100%;object-fit:cover}
-.hero-card{position:relative;margin:-110px auto 0;max-width:780px;background:var(--cream);border-radius:24px;padding:28px 26px;box-shadow:var(--shadow)}
+.hero-img{position:relative;height:min(62vh,520px);overflow:hidden;background:var(--fairway-deep)}
+.hero-img .hero-poster,
+.hero-img .hero-poster img,
+.hero-img .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block}
+.hero-img .hero-poster{z-index:0}
+.hero-img .hero-video{z-index:1}
+.hero-shade{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(18,54,44,.45),rgba(18,54,44,.28) 45%,rgba(18,54,44,.5))}
+.hero-card{position:relative;z-index:3;margin:-110px auto 0;max-width:780px;background:var(--cream);border-radius:24px;padding:28px 26px;box-shadow:var(--shadow)}
 .hero-card h1{max-width:34rem}
 .cta-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}
 @media(max-width:620px){.cta-row{grid-template-columns:1fr}.hero-card{margin-top:-60px}}
+@media (prefers-reduced-motion:reduce){
+  .hero-img .hero-video{display:none!important}
+}
 
 /* sections */
 .section{padding:64px 0}
