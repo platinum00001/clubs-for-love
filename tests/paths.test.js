@@ -23,6 +23,7 @@ for (const f of files) {
     assert.ok(/twitter:card" content="summary_large_image"/.test(s), f + ' missing twitter card');
     assert.ok(/id="our-sites"/.test(s), f + ' missing Our Sites footer');
     assert.ok(/privacy\.html/.test(s) && /terms\.html/.test(s), f + ' missing privacy/terms links');
+    assert.ok(/css\/faq-chat\.css/.test(s) && /js\/faq-chat\.js/.test(s) && /js\/faq-data\.js/.test(s), f + ' missing FAQ chat assets');
   }
   passed++;
 }

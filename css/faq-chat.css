@@ -1,0 +1,52 @@
+/* Clubs for Love — FAQ chat widget */
+.c4l-faq{position:fixed;right:20px;bottom:20px;z-index:60;font-family:var(--sans,"Source Sans 3",system-ui,sans-serif);color:var(--ink,#1a241f)}
+.c4l-faq-launcher{display:inline-flex;align-items:center;gap:8px;background:var(--fairway,#1b4d3e);color:var(--cream,#f4efe4);border:1px solid var(--fairway,#1b4d3e);border-radius:999px;padding:11px 16px 11px 12px;font:600 1rem var(--sans,"Source Sans 3",system-ui,sans-serif);cursor:pointer;box-shadow:0 1px 2px rgba(18,54,44,.12),0 8px 24px rgba(18,54,44,.18)}
+.c4l-faq-launcher:hover{background:var(--fairway-deep,#12362c)}
+.c4l-faq-launcher:focus-visible,.c4l-faq-close:focus-visible,.c4l-faq-chip:focus-visible,.c4l-faq-send:focus-visible,.c4l-faq-input:focus-visible,.c4l-faq-link:focus-visible{outline:2px solid var(--sand,#c4a574);outline-offset:2px}
+.c4l-faq-launcher-icon{display:grid;place-items:center;width:22px;height:22px;flex:0 0 22px}
+.c4l-faq-launcher-icon svg{width:22px;height:22px;display:block}
+.c4l-faq-panel{position:fixed;right:20px;bottom:20px;width:min(380px,calc(100vw - 24px));height:min(560px,70vh);display:flex;flex-direction:column;background:var(--cream,#f4efe4);color:var(--ink,#1a241f);border:1px solid var(--line,rgba(26,36,31,.12));border-radius:22px;box-shadow:0 1px 2px rgba(18,54,44,.06),0 16px 40px rgba(18,54,44,.18);overflow:hidden}
+.c4l-faq-panel[hidden]{display:none}
+.c4l-faq.is-open .c4l-faq-launcher{display:none}
+.c4l-faq-header{display:flex;align-items:center;gap:10px;background:var(--fairway,#1b4d3e);color:var(--cream,#f4efe4);padding:12px 12px 12px 14px;flex:0 0 auto}
+.c4l-faq-mark{width:32px;height:32px;border-radius:50%;background:var(--cream,#f4efe4);object-fit:cover;flex:0 0 32px}
+.c4l-faq-heading{flex:1;min-width:0}
+.c4l-faq-heading p{margin:0;font-family:var(--serif,"Fraunces",Georgia,serif);font-weight:600;font-size:1.05rem;line-height:1.2;color:var(--cream,#f4efe4)}
+.c4l-faq-sub{font-family:var(--sans,"Source Sans 3",system-ui,sans-serif)!important;font-weight:500!important;font-size:.78rem!important;letter-spacing:.04em;opacity:.85}
+.c4l-faq-close{appearance:none;background:transparent;border:0;color:var(--cream,#f4efe4);font:600 1.6rem/1 var(--sans,"Source Sans 3",system-ui,sans-serif);width:36px;height:36px;border-radius:50%;cursor:pointer;flex:0 0 36px}
+.c4l-faq-close:hover{background:rgba(244,239,228,.12)}
+.c4l-faq-log{flex:1 1 auto;overflow-y:auto;padding:14px 14px 6px;display:flex;flex-direction:column;gap:10px;background:var(--paper,#fbfaf6)}
+.c4l-faq-msg{max-width:100%;display:flex;flex-direction:column;gap:6px}
+.c4l-faq-msg--user{align-items:flex-end}
+.c4l-faq-msg--bot{align-items:flex-start}
+.c4l-faq-bubble{background:var(--cream,#f4efe4);border:1px solid var(--line,rgba(26,36,31,.12));border-radius:16px;padding:10px 12px;font-size:.95rem;line-height:1.45;max-width:100%}
+.c4l-faq-bubble p{margin:0 0 .55rem}
+.c4l-faq-bubble p:last-child{margin-bottom:0}
+.c4l-faq-msg--user .c4l-faq-bubble{background:var(--fairway,#1b4d3e);color:var(--cream,#f4efe4);border-color:var(--fairway,#1b4d3e)}
+.c4l-faq-links{display:flex;flex-wrap:wrap;gap:6px}
+.c4l-faq-link{display:inline-flex;align-items:center;background:var(--fairway,#1b4d3e);color:var(--cream,#f4efe4);text-decoration:none;font-weight:600;font-size:.85rem;border-radius:999px;padding:6px 12px}
+.c4l-faq-link:hover{background:var(--fairway-deep,#12362c)}
+.c4l-faq-chips{display:flex;flex-wrap:wrap;gap:6px;padding:8px 12px;background:var(--paper,#fbfaf6);border-top:1px solid var(--line,rgba(26,36,31,.12));flex:0 0 auto;max-height:7.5rem;overflow-y:auto}
+.c4l-faq-chip{appearance:none;background:var(--cream,#f4efe4);color:var(--fairway-deep,#12362c);border:1px solid var(--sand,#c4a574);border-radius:999px;padding:6px 10px;font:600 .8rem var(--sans,"Source Sans 3",system-ui,sans-serif);cursor:pointer;line-height:1.2}
+.c4l-faq-chip:hover{background:var(--sand-light,#e4d4b8)}
+.c4l-faq-form{display:flex;gap:8px;padding:10px 12px 12px;background:var(--cream,#f4efe4);border-top:1px solid var(--line,rgba(26,36,31,.12));flex:0 0 auto}
+.c4l-faq-input{flex:1;min-width:0;font:1rem var(--sans,"Source Sans 3",system-ui,sans-serif);color:var(--ink,#1a241f);background:var(--paper,#fbfaf6);border:1px solid var(--line,rgba(26,36,31,.12));border-radius:12px;padding:10px 12px}
+.c4l-faq-send{appearance:none;background:var(--fairway,#1b4d3e);color:var(--cream,#f4efe4);border:1px solid var(--fairway,#1b4d3e);border-radius:12px;padding:10px 14px;font:600 .95rem var(--sans,"Source Sans 3",system-ui,sans-serif);cursor:pointer}
+.c4l-faq-send:hover{background:var(--fairway-deep,#12362c)}
+
+/* Keep the closed button off the hero headline and lead on small screens. */
+@media (max-width:620px){
+  .hero-img{height:min(20vh,180px)}
+  .hero-card{margin-top:-36px;margin-bottom:5.5rem}
+  body{padding-bottom:5.25rem}
+  .c4l-faq{right:12px;bottom:12px}
+  .c4l-faq-panel{right:8px;left:8px;bottom:8px;width:auto;height:min(72vh,560px)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .c4l-faq-launcher,.c4l-faq-panel,.c4l-faq-chip,.c4l-faq-link,.c4l-faq-send{transition:none}
+}
+
+@media print{
+  .c4l-faq{display:none!important}
+}

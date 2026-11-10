@@ -67,6 +67,7 @@ def head(title, desc, page, noindex=False, base=""):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap">
 <link rel="stylesheet" href="css/styles.css?v={V}">
+<link rel="stylesheet" href="css/faq-chat.css?v={V}">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -122,7 +123,8 @@ def footer(scripts=()):
 <script src="config.js?v={V}"></script>
 <script src="js/supabase-client.js?v={V}"></script>
 <script src="js/common.js?v={V}"></script>
-{js}
+{js}<script src="js/faq-data.js?v={V}"></script>
+<script src="js/faq-chat.js?v={V}"></script>
 </body>
 </html>
 '''
