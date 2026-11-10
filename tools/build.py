@@ -70,7 +70,7 @@ def head(title, desc, page, noindex=False, base=""):
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="topbar"><div class="wrap"><a data-email href="#">clubs4lovema@gmail.com</a><span>Falmouth · Mashpee · Upper Cape</span></div></div>
+<div class="topbar"><div class="wrap"><a data-email href="#">club4love@gmail.com</a><span>Falmouth · Mashpee · Upper Cape</span></div></div>
 <header class="site">
  <div class="wrap navbar">
   <a class="brand" href="index.html"><span class="mark">{MARK}</span><span><b>Clubs for Love</b><small>Cape Cod</small></span></a>
@@ -104,7 +104,7 @@ def footer(scripts=()):
   </div>
   <div>
    <p class="eyebrow">Write us</p>
-   <p><a class="foot-email" data-email href="#">clubs4lovema@gmail.com</a></p>
+   <p><a class="foot-email" data-email href="#">club4love@gmail.com</a></p>
    <p>The only inbox on this site. Written gift acknowledgment is emailed after we actually receive the gear. We do not appraise.</p>
    <div class="foot-links"><a href="donate.html">Donate</a><a href="drop-off.html">Drop-off</a><a href="request.html">Need clubs</a><a href="pickup.html">Pickup</a><a href="affiliates.html">Affiliates</a><a href="sponsors.html">Give a round</a><a href="stories.html">Stories</a><a href="calendar.html">Calendar</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="account.html" data-account-link>Sign in</a></div>
   </div>

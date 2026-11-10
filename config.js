@@ -11,9 +11,9 @@ window.C4L_CONFIG = {
   PHOTO_BUCKET: "clubs4love-photos", // private bucket: public can upload, only admins can view
   SITE_URL: "https://clubsforlove.com/",
 
-  // The one inbox for the whole site. NOTE: clubs4lovema@gmail.com is being created by James;
+  // The one inbox for the whole site. NOTE: club4love@gmail.com is being created by James;
   // until it exists, mail sent to it will bounce. Change it here and every page follows.
-  CONTACT_EMAIL: "clubs4lovema@gmail.com",
+  CONTACT_EMAIL: "club4love@gmail.com",
 
   // TODO(James): social accounts are NOT created yet. Paste the full profile URL once each
   // account exists; empty entries show as "coming soon" (see docs/SETUP.md for suggested handles).

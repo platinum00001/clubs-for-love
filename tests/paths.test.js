@@ -30,9 +30,9 @@ assert.ok(/id="data-deletion"/.test(fs.readFileSync(path.join(root, 'privacy.htm
 const cfg = fs.readFileSync(path.join(root, 'config.js'), 'utf8');
 const code = cfg.replace(/\/\*[\s\S]*?\*\/|\/\/.*$/gm, '');
 assert.ok(!/service_role|sb_secret_/.test(code), 'config.js must not contain a service_role/secret key');
-assert.ok(/CONTACT_EMAIL:\s*"clubs4lovema@gmail\.com"/.test(cfg), 'CONTACT_EMAIL constant missing');
+assert.ok(/CONTACT_EMAIL:\s*"club4love@gmail\.com"/.test(cfg), 'CONTACT_EMAIL constant missing');
 const jwt = cfg.match(/eyJ[\w-]+\.([\w-]+)\./);
 if (jwt) assert.notStrictEqual(JSON.parse(Buffer.from(jwt[1], 'base64').toString()).role, 'service_role');
 // The email address should only be hard-coded in config.js (pages get it via data-email), apart from no-JS fallback text.
-for (const f of files.filter(f => f.startsWith('js/'))) assert.ok(!/clubs4lovema@gmail\.com/.test(fs.readFileSync(path.join(root, f), 'utf8')) || f === 'js/common.js', f + ' hard-codes the contact email');
+for (const f of files.filter(f => f.startsWith('js/'))) assert.ok(!/club4love@gmail\.com/.test(fs.readFileSync(path.join(root, f), 'utf8')) || f === 'js/common.js', f + ' hard-codes the contact email');
 console.log('✓', passed, 'files use sub-path-safe links;', links, 'local links resolve; config.js has no secret key');

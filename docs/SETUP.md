@@ -4,7 +4,7 @@ Live site: https://clubsforlove.com/
 Repo: https://github.com/platinum00001/clubs-for-love
 Database: Supabase project **james-sites** (`oiousqgzqcjanikglkxl`), schema **`clubs4love`**
 Photos: private storage bucket **`clubs4love-photos`** (public can upload, only admins can view)
-Contact email (one constant in `config.js` → `CONTACT_EMAIL`): **clubs4lovema@gmail.com**
+Contact email (one constant in `config.js` → `CONTACT_EMAIL`): **club4love@gmail.com**
 > That Gmail account is being created by James. Until it exists, mail to it bounces. If the
 > address changes, edit `CONTACT_EMAIL` in `config.js` — every page picks it up.
 
@@ -37,7 +37,7 @@ Supabase SQL editor (replace the email):
 
 ```sql
 insert into clubs4love.admins (user_id, note)
-select id, 'James' from auth.users where email = 'clubs4lovema@gmail.com'
+select id, 'James' from auth.users where email = 'club4love@gmail.com'
 on conflict do nothing;
 ```
 
@@ -90,7 +90,7 @@ Suggested, in order of preference. Checked October 19, 2026:
 |---|---|---|---|
 | `clubs4love` | **Available** (no account) | No public page found* | Unknown* |
 | `clubsforlove` | **Available** | No public page found* | Unknown* |
-| `clubs4lovema` | **Available** | No public page found* | Unknown* |
+| `club4love` | **Available** | No public page found* | Unknown* |
 | `clubs4lovecc` | **Available** | — | — |
 | `clubs4lovecapecod` (too long for X's 15-char limit) | n/a | No public page found* | Unknown* |
 

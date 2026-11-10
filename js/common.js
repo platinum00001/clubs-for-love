@@ -7,7 +7,7 @@
     x: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 1.2h3.7l-8 9.2 9.4 12.4h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9zm-1.3 19.5h2L6.5 3.2H4.3l13.3 17.5z"/></svg>'
   };
   const NAMES = { instagram: "Instagram", facebook: "Facebook", x: "X" };
-  C4L.email = function () { return (C4L.cfg ? C4L.cfg() : window.C4L_CONFIG || {}).CONTACT_EMAIL || "clubs4lovema@gmail.com"; };
+  C4L.email = function () { return (C4L.cfg ? C4L.cfg() : window.C4L_CONFIG || {}).CONTACT_EMAIL || "club4love@gmail.com"; };
   C4L.socialHTML = function () {
     const s = (window.C4L_CONFIG || {}).SOCIAL || {};
     return Object.keys(NAMES).map(function (k) {
